@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://dn74ojk5u6m2"]
+
+[ext_resource type="Script" path="res://for all/currot/static_body_2d.gd" id="1_eafxn"]
+[ext_resource type="Texture2D" uid="uid://bbihlurteo2rh" path="res://for all/currot/morkov.png" id="1_t3wns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uyha"]
+atlas = ExtResource("1_t3wns")
+region = Rect2(0, 0, 1200, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7flo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uyha")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7knxj"]
+radius = 8.0
+
+[node name="currot" type="Area2D"]
+scale = Vector2(1.28262, 1.28262)
+script = ExtResource("1_eafxn")
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.01795, -5.65866)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -2)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+position = Vector2(-9.4311, -4.52693)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+position = Vector2(12.0718, -5.28142)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.377244, -9.80835)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.14968, -1.88622)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3.01795, -5.65866)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+position = Vector2(7.92213, -0.754488)
+scale = Vector2(0.0142921, 0.0142921)
+sprite_frames = SubResource("SpriteFrames_g7flo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 2)
+scale = Vector2(2.84528, 2.76037)
+shape = SubResource("CircleShape2D_7knxj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

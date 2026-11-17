@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d101uyhdk8t8r"]
+
+[ext_resource type="Texture2D" uid="uid://dlec35dkcxw33" path="res://for all/backinMENU/return-printer-operation-back-print-1024.webp" id="1_j3e5m"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.0642387, 0.0642387)
+icon = ExtResource("1_j3e5m")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7mhybskdsooj"]
+
+[ext_resource type="Texture2D" uid="uid://bshumkpo11yq" path="res://for all/zadnikckamera/pixil-frame-0.png" id="1_fc2vp"]
+
+[node name="Camera2D" type="Camera2D"]
+
+[node name="Pixil-frame-0" type="Sprite2D" parent="."]
+position = Vector2(45, -139)
+rotation = -3.14159
+scale = Vector2(17.6042, 18.687)
+texture = ExtResource("1_fc2vp")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ynafees76arb"]
+
+[ext_resource type="Script" path="res://lvl3/labblvl_3_file.gd" id="1_7ktf6"]
+[ext_resource type="Texture2D" uid="uid://lw6igw2lcv06" path="res://lvls/lvl3/labblvl3new.png" id="1_n0tup"]
+
+[node name="labblvl3file" type="Node2D"]
+script = ExtResource("1_7ktf6")
+
+[node name="Labblvl3New" type="Sprite2D" parent="."]
+position = Vector2(613, 307)
+scale = Vector2(2.4321, 2.4321)
+texture = ExtResource("1_n0tup")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1099.0
+offset_top = 10.0
+offset_right = 1138.0
+offset_bottom = 49.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
